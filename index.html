@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_espaco">
+            <a class="cabecalho_logo" href="index.html"><img class="cabecalho_menu_img_logo" src="assets/Logo.png" alt="logo alura"></a>
+        </div>
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href="https://github.com/namelessmai" target="_blank"><img class="cabecalho_menu_img" src="assets/github.png" alt="github logo"></a>
+            <a class="cabecalho_menu_link" href="https://www.linkedin.com/in/maiara-luiza/" target="_blank"><img class="cabecalho_menu_img" src="assets/linkedin.png" alt="linkedin logo"></a>
+        </nav>
+    </header>
+    <body>
+        <main class="conteudo">
+            <div class="conteudo_input">
+                <textarea name="texto" id="input" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+                <div class="conteudo_input_botoes">
+                    <button class="conteudo_input_botao_crip" id="btn-criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="conteudo_input_botao_descrip" id="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>            
+            <div class="conteudo_output">
+                <p id="output_campo_texto"></p>
+                <div id="output"><img class="output_img_placeholder" src="assets/High quality products 1 1.png" alt="Nenhuma mensagem encontrada">
+                <h1 class="output_mensagem_placeholder">Nenhuma mensagem <br>encontrada.</h1>
+                </div>
+                <button class="botao_copiar"onclick="copiarMensagem()">Copiar</button>
+            </div>
+        </main>
+    </body>
+    <footer class="rodape">
+        <p>Desenvolvido por Maiara.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
