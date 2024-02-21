@@ -100,3 +100,17 @@ function descriptografar() {
         mensagemPlaceholder.style.display = "block"; 
     }
 }
+function checkWidth() {
+    var outputPlaceholder = document.querySelector('.output_mensagem_placeholder');
+    if (window.matchMedia("(max-width: 1200px)").matches) {
+        // Se a largura da tela for menor ou igual a 1200px, remover <br>
+        outputPlaceholder.innerHTML = outputPlaceholder.innerHTML.replace(/<br>/g, "");
+    } else {
+        // Se a largura da tela for maior que 1200px, restaurar o conteúdo original
+        outputPlaceholder.innerHTML = "Nenhuma mensagem <br>encontrada.";
+    }
+}
+
+checkWidth();
+
+window.addEventListener("resize", checkWidth);

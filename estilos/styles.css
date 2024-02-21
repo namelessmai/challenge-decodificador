@@ -33,14 +33,13 @@ body {
     padding: 5% 15%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
-    gap: 80px;
+    gap: 60px;
 }
 .conteudo_input {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 50%;
 }
 #input {
@@ -48,28 +47,25 @@ body {
     height: 500px;
     resize: none;
     outline: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #0F2167;
     background: none;
     border: none;
 }
 .conteudo_input_botoes{
     display: flex;
-    width: 100%;
-    gap: 5%;
-    margin: 15px;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 15px;
 }
 .conteudo_input_botao_crip{
-    padding: 40px 30px;
+    padding: 24px 50px;
     background-color: #213555;
     color: #F0F0F0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: none;
-    border-radius: 32px;
+    border-radius: 24px;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,15 +76,14 @@ body {
     color: #0F2167;
 }
 .conteudo_input_botao_descrip{
-    padding: 40px 30px;
+    padding: 24px 50px;
     background-color: #4F709C;
     color:#F0F0F0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: none;
-    border-radius: 32px;
+    border-radius: 24px;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,34 +97,38 @@ body {
     flex-direction: column;
     background-color: #fff;
     padding: 25px 0px;
-    width: 50%;
+    width: 35%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     text-align: center;
     align-items: center;
     height: 550px;
-}
-.output_img_placeholder{
-    width: 110%;
+    gap: 25px;
 }
 .output_mensagem_placeholder{
     font-size: 1.5rem;
-    margin: 15px;
     text-align: center;
+    font-weight: 700;
+    padding: 10px;
 }
+.output_mensagem_placeholder_dois{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
 #output_campo_texto {
     font-size: 1.5rem;
 }
 .botao_copiar {
-    padding: 40px 30px;
-    background-color: #4F709C;
-    color:#F0F0F0;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 32px;
+    padding: 20px 100px;
+    background-color: white;
+    color: #0F2167;
+    font-size: 1rem;
+    border: 1px solid #0F2167;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,6 +136,7 @@ body {
 .botao_copiar:hover{
     background-color: #E5D283;
     color: #0F2167;
+    border: none;
 }
 .rodape {
     display: flex;
@@ -149,39 +149,87 @@ body {
 }
 @media (max-width: 1200px) {
     .cabecalho{
+        padding: 5%;
         justify-content: center;
+
     }
-    .conteudo{
+    .conteudo {
         flex-direction: column;
         padding: 5%;
-        gap: 5px;
+        gap: 50px;
         align-items: center;
     }
     #input{
-        width: 130%;
-        height: auto;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-    .conteudo_input_botoes{
-        justify-content: center;
-    }
-    .conteudo_input_botao_crip{
-        padding: 20px 15px;
-        width: auto;
-    }
-    .conteudo_input_botao_descrip{
-        padding: 20px 15px;
-        width: auto;
-    }
-    .conteudo_output{
-        height: auto;
-        width: auto;
-    }
-    .output_img_placeholder{
+    .conteudo_input{
         width: 100%;
     }
-    .botao_copiar{
-        padding: 20px 15px;
-        width: auto;
+    
+    .conteudo_input_botao_crip {
+        padding: 25px 100px;
+        font-size: 1.5rem;
     }
+    .conteudo_input_botao_descrip{
+        padding: 25px 100px;
+        font-size: 1.5rem;
+    }
+    .conteudo_output{
+        width: 100%;
+        height: 50%;
+        gap: 0;
+        padding: 10px;
+    }
+    #output_campo_texto{
+        font-size: 2rem;
+
+    }
+    .output_img_placeholder{
+        display: none;
+    }
+    .botao_copiar{
+        padding: 15px 350px;
+        font-size: 1.5rem;
+    }
+    .output_mensagem_placeholder_dois{
+        display: none;
+    }
+}
+@media (max-width: 844px){
+    .cabecalho{
+        padding: 5%;
+        
+    }
+    .conteudo{
+        padding: 10% 2%;
+        gap: 5px;
+    }
+    #input{
+        margin: 5px;
+    }
+    .conteudo_input_botoes{
+        flex-direction: column;
+        margin: 5px;
+    }
+    .conteudo_output{
+        padding: 0;
+    }
+    .botao_copiar{
+        padding: 15px 230px;
+        margin: 15px;
+    }
+
+}
+@media (max-width: 522px){
+    .cabecalho {
+        padding: 10%;
+    }
+    .output_img_placeholder{
+        display: none;
+    }
+    .botao_copiar{
+        padding: 5% 40%;
+        margin: 20px;
+    }
+
 }

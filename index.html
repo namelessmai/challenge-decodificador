@@ -20,15 +20,16 @@
         <main class="conteudo">
             <div class="conteudo_input">
                 <textarea name="texto" id="input" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
-                <div class="conteudo_input_botoes">
+                <section class="conteudo_input_botoes">
                     <button class="conteudo_input_botao_crip" id="btn-criptografar" onclick="criptografar()">Criptografar</button>
                     <button class="conteudo_input_botao_descrip" id="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
-                </div>
+                </section>
             </div>            
             <div class="conteudo_output">
                 <p id="output_campo_texto"></p>
-                <div id="output"><img class="output_img_placeholder" src="assets/High quality products 1 1.png" alt="Nenhuma mensagem encontrada">
+                <div id="output"><img class="output_img_placeholder" src="assets/High quality products 1 1.png" width="336" height="304" alt="Nenhuma mensagem encontrada">
                 <h1 class="output_mensagem_placeholder">Nenhuma mensagem <br>encontrada.</h1>
+                <h2 class="output_mensagem_placeholder_dois">Digite um texto que você deseja <br>criptografar ou descriptografar.</h2>
                 </div>
                 <button class="botao_copiar"onclick="copiarMensagem()">Copiar</button>
             </div>
